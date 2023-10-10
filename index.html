@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Controlador de Processos</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+</head>
+<body class="container-body">
+   <header>
+      <h1 class="header-title">Controlador de Processos</h1>
+   </header>
+   <main class="container-main">
+      <section class="container-respostas">
+         <div class="tabela-processos">
+            <div class="icon-text">
+               <h2>Tabela de Processos</h2>
+               <img class="icon" src="./assets/favicon.png" alt="" >
+            </div>
+            <table class="tabela">
+               <thead>
+                  <tr>
+                     <th>Ordem</th>
+                     <th>Processo</th>
+                     <th>Tempo Execução</th>
+                  </tr>
+               </thead>
+               <tbody class="inserir-processos">
+
+               </tbody>
+            </table>
+         </div>
+      </section>
+      <section class="container-inputs">
+         <h2>Controladores Round-Robin</h2>
+         <div class="controles-inputs">
+            <h3>Criar processo</h3>
+            <label for="criar-processo">Insira o tempo de execução</label>
+            <div>
+               <input name="criar-processo" id="tempo-execucao" type="number">
+               <button class="button-criar-processo">Criar</button>
+            </div>
+         </div>
+         <div class="controles-inputs">
+            <h3>Adicionar Quantum</h3>
+            <label for="quantum">Insira o tempo de Quantum</label>
+            <input class="quantum" name="quantum" type="number">
+         </div>
+         <div class="controles-buttons">
+            <button class="executar-processos">Executar</button>
+            <button class="resetar-processos">Resetar</button>
+         </div>
+      </section>
+      <section class="container-respostas">
+         <div class="tabela-processos">
+            <div class="icon-text">
+               <h2>Processos Executados</h2>
+               <img class="icon" src="./assets/favicon.png" alt="" >
+            </div>
+            <table class="tabela">
+               <thead>
+                  <tr>
+                     <th>Processo</th>
+                     <th>Tempo de Espera</th>
+                     <th>Turnaround</th>
+                  </tr>
+               </thead>
+               <tbody class="inserir-respostas">
+
+               </tbody>
+            </table>
+         </div>
+         <div class="tabela-processos">
+            <div class="icon-text">
+               <h2>Histórico dos Processos</h2>
+               <img class="icon" src="./assets/favicon.png" alt="" >
+            </div>
+            <table class="tabela">
+               <thead>
+                  <tr>
+                     <th>Processo</th>
+                     <th>Tempo Restante</th>
+                     <th>Tempo de Espera</th>
+                     <th>Turnaround</th>
+                  </tr>
+               </thead>
+               <tbody class="inserir-historico">
+
+               </tbody>
+            </table>
+         </div>
+      </section>
+   </main>
+
+   <script src="script.js"></script>
+</body>
+</html>

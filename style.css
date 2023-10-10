@@ -1,0 +1,123 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #f0f5fe;
+   font-family: Arial, sans-serif;
+   margin: 0;
+}
+
+.container-body {
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+
+.container-main {
+   width: 90%;
+   min-height: 80vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 30px;
+}
+
+.container-inputs, .container-respostas {
+   background-color: #fff;
+   width: 45%;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 25px;
+   border-radius: 10px; /* Borda arredondada */
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+h1, h2, h3 {
+   color: #007bff;
+}
+
+table {
+   width: 100%;
+   font-size: 20px;
+   text-align: center;
+   border-collapse: collapse;
+}
+
+th, td {
+   padding: 10px;
+   border-bottom: 1px solid #ddd;
+}
+
+.tabela-processos h2, .tabela-processos h2 {
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.controles-inputs {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+
+.controles-buttons {
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   justify-content: center;
+}
+
+input[type="number"] {
+   padding: 5px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   width: 100%;
+   max-width: 300px;
+   margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.button-criar-processo, .executar-processos, .resetar-processos {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-bottom: 10px; /* Espaçamento inferior igual ao do botão "Executar Processos" */
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.button-criar-processo:hover, .executar-processos:hover, .resetar-processos:hover {
+   background-color: #0056b3;
+}
+
+.icon-text{
+   height: 25px;
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.icon{
+   text-align: center;
+   width: 25px;
+   height: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
